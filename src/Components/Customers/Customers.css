@@ -1,0 +1,19 @@
+.customers {
+  width: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 5rem auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 75px;
+  grid-column-gap: 100px;
+}

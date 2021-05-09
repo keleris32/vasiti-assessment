@@ -1,0 +1,141 @@
+#testimonial {
+  width: 100%;
+}
+
+#testimonial-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  max-height: 29.125em;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+.testimonial-desc {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 50%;
+  /* flex-basis: 50%; */
+  font-family: var(--main-font);
+  padding: 0 3.5rem;
+}
+
+.testimonial-desc > h1 {
+  font-size: var(--testimonial-title);
+  font-weight: var(--bold-font);
+  line-height: 39px;
+}
+
+#testimonial-sub-title {
+  margin-top: -0.9rem;
+  font-size: var(--sub-desc);
+  padding: 0.4em 0.4em;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#testimonial-text {
+  font-size: 1em;
+  font-weight: var(--light-font);
+  line-height: 31px;
+}
+
+.testimonial-desc > button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  margin-top: 1em;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+span {
+  position: relative;
+}
+
+span > img {
+  position: absolute;
+  width: 250px;
+  top: 2.5em;
+}
+
+.testimonial-img-con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+#testimonial-ellipse {
+  width: 33em;
+  height: 33em;
+  border-radius: 50%;
+  margin-top: 20%;
+}
+
+.testimonial-img-con > img {
+  height: 29.25em;
+  width: 27.25em;
+  position: absolute;
+}
+
+/* Sub Classes for ternary operators ( if true or false ) */
+
+.darkBg {
+  background-color: var(--dark-test-bg);
+}
+
+.lightBg {
+  background-color: var(--light-test-bg);
+}
+
+.imgStart {
+  flex-direction: row-reverse;
+}
+
+.imgEnd {
+  flex-direction: row;
+}
+
+.darkEllipse {
+  background-color: var(--dark-ellipse);
+}
+
+.lightEllipse {
+  background-color: var(--light-ellipse);
+}
+
+.darkText {
+  color: #fff;
+}
+
+.lightText {
+  color: #242120;
+}
+
+.darkBtn {
+  color: #fff;
+}
+
+.lightBtn {
+  color: var(--vasiti-pri-color);
+}
+
+.darkSubTitle {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.lightSubTitle {
+  color: var(--vasiti-pri-color);
+  border: 1px solid rgba(255, 92, 0, 0.4);
+}

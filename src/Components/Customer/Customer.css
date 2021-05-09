@@ -1,0 +1,33 @@
+.customer > h2 {
+  font-size: 1.5em;
+  font-weight: var(--medium-font);
+}
+
+.customer-info {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin-top: -1.25em;
+}
+
+.location {
+  font-size: 15px;
+}
+
+.cus {
+  font-size: 13px;
+  background-color: #eef8ff;
+  color: #0d019a;
+  padding: 0.4em 0.4em;
+}
+
+.vendor {
+  font-size: 13px;
+  background-color: #f0ffee;
+  color: #049a01;
+  padding: 0.4em 0.4em;
+}
+
+.lorem-testimony {
+  font-size: 16px;
+}

@@ -1,3 +1,21 @@
+:root {
+  --main-font: 'Inter', sans-serif;
+  --bold-font: 700;
+  --medium-font: 600;
+  --light-font: 400;
+  --hero-title: 3em;
+  --testimonial-title: 2em;
+  --testimonial-desc: 1.125em;
+  --dark-test-bg: #222;
+  --light-test-bg: #fff8f5;
+  --dark-ellipse: #2e2e2e;
+  --light-ellipse: rgba(255, 92, 0, 0.03);
+  --sub-desc: 0.813em;
+  --vasiti-pri-color: #ff5c00;
+  --button-hover: #ff6f1e;
+  --hero-ellipse: #fff8f5;
+}
+
 body {
   margin: 0;
   padding: 0;

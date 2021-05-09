@@ -1,11 +1,25 @@
 import './App.css';
-import { Navbar } from './Components';
-import { test } from './data';
+import {
+  CustomersOne,
+  CustomersTwo,
+  Hero,
+  Navbar,
+  Testimonial,
+} from './Components';
+import { custOne, custTwo } from './Components/Testimonial/testimonialData';
 
 function App() {
   return (
     <div className="App">
-      <Navbar {...test} />
+      <Navbar />
+      <Hero />
+      <Testimonial {...custOne} />
+      <CustomersOne />
+      <Testimonial {...custTwo} />
+      <CustomersTwo />
+      <div
+        style={{ height: '500px', width: '100%', backgroundColor: '#25201D' }}
+      />
     </div>
   );
 }
