@@ -27,10 +27,99 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Vasiti: Testimonials</title>
+    <style>
+      
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  animation: dayToNight 10s infinite 1.5s;
+  color: blue
+}
+
+.loader-hide {
+  display: none;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.sun {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #fcd25b;
+  border: 3px solid #fcd25b;
+  overflow: hidden;
+  animation: dayToNight2 10s infinite 1.5s;
+}
+
+.shadow {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: white;
+  top: -5px;
+  left: 0px;
+  animation: moveShadow 10s infinite 1.5s;
+}
+
+@keyframes moveShadow {
+  0% {
+    transform: translateX(150px);
+    background-color: white;
+  }
+  50% {
+    transform: translateX(-10px);
+    background-color: black;
+  }
+  100% {
+    transform: translateX(-170px);
+    background-color: white;
+  }
+}
+
+@keyframes dayToNight {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="load">
+        <section id="section load-hide">
+            <div class="content load-hide">
+              <div class="sun load-hide">
+                <div class="shadow load-hide"></div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    
+    
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import {
   CustomersOne,
@@ -8,7 +9,16 @@ import {
 } from './Components';
 import { custOne, custTwo } from './Components/Testimonial/testimonialData';
 
-function App() {
+function App({ hideLoader, showLoader }) {
+  // useEffect(hideLoader, []);
+
+  useEffect(() => {
+    hideLoader();
+    return () => {
+      showLoader();
+    };
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
